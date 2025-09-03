@@ -24,6 +24,7 @@ import {
   SearchIcon,
 } from "@/components/icons";
 import { Logo } from "@/components/icons";
+import { Link as InertiaLink } from "@inertiajs/react";
 
 export const Navbar = () => {
   const searchInput = (
@@ -41,7 +42,7 @@ export const Navbar = () => {
       labelPlacement="outside"
       placeholder="Search..."
       startContent={
-        <SearchIcon className="text-base text-default-400 pointer-events-none flex-shrink-0" />
+        <SearchIcon className="text-base text-default-400 pointer-events-none shrink-0" />
       }
       type="search"
     />
@@ -52,6 +53,7 @@ export const Navbar = () => {
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand className="gap-3 max-w-fit">
           <Link
+            as={InertiaLink}
             className="flex justify-start items-center gap-1"
             color="foreground"
             href="/"
@@ -64,6 +66,7 @@ export const Navbar = () => {
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
               <Link
+                as={InertiaLink}
                 className={clsx(
                   linkStyles({ color: "foreground" }),
                   "data-[active=true]:text-primary data-[active=true]:font-medium",

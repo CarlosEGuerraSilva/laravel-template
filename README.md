@@ -5,7 +5,7 @@ This is a template for creating applications using Laravel 12 and HeroUI (v2).
 ## Technologies Used
 
 -   [Laravel 12](https://laravel.com/)
--   [HeroUI v2.8.3](https://www.heroui.com/)
+-   [HeroUI v2](https://www.heroui.com/)
 -   [PHP v8.2](https://www.php.net/)
 -   [React 19](https://reactjs.org/)
 -   [Tailwind v4](https://tailwindcss.com/)
